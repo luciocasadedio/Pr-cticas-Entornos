@@ -86,8 +86,126 @@ En cada caso, explicar las diferencias entre los segmentos de código y sus visu
 <a name="arriba" id="arriba"></a> --> No crea un enlace que se pueda clickear ya que no presenta el atributo href con en el enlace.
 
 3-b
-<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p> --> 
-<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
-<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
-gen1" />Click aquí</a></p>
-<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p> --> ingresa una imagen y un link a google.
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p> --> Ingresa primero el link a google y luego la imagen.
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p> -->ambos enlace e imagen forman un solo bloque de enlace.
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p> --> Dos enlaces independientes que apuntan al mismo sitio, uno para la imagen y otro para el texto.
+
+<ul>
+<li>xxx</li>
+<li>yyy</li> ----------------> Es una lista NO ORDENADA
+<li>zzz</li>
+</ul>
+
+<ol>
+<li>xxx</li>
+<li>yyy</li> ------------------> Es una lista ORDENADA
+<li>zzz</li>
+</ol>
+
+<ol>
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li> ----------------> Es una lista ORDENADA donde este elemento toma el valor 2 por defecto.
+</ol>
+
+<ol>
+<li
+value="3">zzz</li> ----------> Lista ORDENADA donde este elemento toma el valor 3 por defecto.
+</ol>
+
+<blockquote>
+<p>1. xxx<br />
+2. yyy<br />     ---------------------------> Es una sangría de bloques utilizadas para citas textuales.
+3. zzz</p>
+</blockquote>
+
+3-d
+<table border="1" width="300">  -----------------> tabla con 2 columnas y 4 celdas
+<tr>
+<th>Columna 1</th>
+<th>Columna 2</th>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+
+<table border="1" width="300"> 
+<tr>
+<td><div align="center"><strong>Colum
+na1</strong></div></td>
+<td><div align="center"><strong>Columna 2</strong></div></td> ------------> tabla con alineacion central en las dos columnas
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+3-e En la primera tabla se usa caption para colocar el título fuera de las celdas, en la de la derecha se inserta una fila comun tr y se utiliza colapsan=3 para que el titulo ocupe 3 columnas. 
+Se usa además align para alinear en el centro de esa celda expandida.
+
+3-i
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+<b>CLICK AQUÍ</b></button></label>
+
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+---> Son botones, el primero con una imagen debajo y el segundo sin ninguna imagen. Con cartel click aquí.
+
+3-j
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br /> --> 
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+Es un input que al estar bajo el mismo nombre, el navegador los trata como un grupo: si seleccionás "X", automáticamente se desmarca "Y". 
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+Aquí cada botón tiene un nombre diferente, name="opcion1" y name="opcion2". 
+Como no pertenecen al mismo grupo, el navegador permite que ambos queden seleccionados al mismo tiempo, lo cual rompe la lógica habitual de un botón "radio" (que debería ser de opción única)
+
+3-k
+<select name="lista">
+<optgroup label="Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label="Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+<select name="lista[]" multiple="multiple">
+<optgroup label=" Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label=" Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+Es un menú desplegable estándar donde solo se puede elegir una opción a la vez.
+Al incluir el atributo multiple="multiple", el navegador permite al usuario seleccionar varias opciones simultáneamente
+Además, el nombre de la lista cambia a lista[] (notación de array) para que el servidor pueda recibir todos los valores seleccionados
+Ambas utilizan la etiqueta <optgroup> con el atributo label ("Caso 1" y "Caso 2") para crear categorías o títulos dentro del menú que no son seleccionables, 
+pero sirven para organizar visualmente las opciones <option>.
+
+Ejercitación 4: en archivo HTML.
+Ejercitación 5: en archivo HTML.
