@@ -1,4 +1,5 @@
 Lucio Casadedio - Práctica 1 - Entornos gráficos
+Ejercitación 1:
 1. ¿Qué es HTML, cuándo fue creado, cuáles fueron las distintas versiones y cuál es la última?
 HTML es el lenguaje estándar utilizado para publicar en la Web. 
 Fue creado a principios de los años 90. 
@@ -27,4 +28,50 @@ DTD Transicional: Permite el uso de elementos y atributos desaprobados, pensado 
 
 DTD con Marcos (Frameset): Es igual al Transicional, pero le suma la posibilidad de dividir la pantalla usando el elemento <frameset>.
 
-5.
+5. ¿Qué son los metadatos y cómo se especifican en HTML?
+Los metadatos son "información sobre el documento" (por ejemplo, el idioma, el autor, palabras clave). Es información que no se ve directamente en la pantalla pero sirve para los navegadores y buscadores. 
+Se especifican en la cabecera del documento (dentro del bloque <head>) usando la etiqueta <meta>.
+
+Ejercitación 2:
+2a- <!-- Código controlado el día 12/08/2009 → Comentario, se coloca arriba en el head o en el body para indicar aclaraciones generales del código sin que el navegador lo tenga en cuenta, se utiliza <! y se cierra con -->
+
+2b- <div id="bloque1">Contenido del bloque1</div> -> Organizan y dividen el código en bloques/secciones, se usa en el body. El id sirve para identificar un div en específico y aplicar estilos CSS o scripts.
+
+2c-
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" /> --> se usa en el body, inserta una imagen en el documento, el atributo src indica la fuente, alt es el texto alternativo, id y name son identificadores de la imagen, width y length indican ancho y altura en píxeles, y long desc descripción larga de la imagen.
+alt y src serán atributos obligatorios para que funcione la imagen mientras que el resto serán opcionales.
+
+2d- <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+Se utiliza en el head, define metadatos del documento HTML. El primero indica que las palabras que están en content en lenguaje español son palabras claves para buscadores.
+Mientras que la segunda línea simula un encabezado de respuesta HTTP.
+
+2e- <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML </a>
+Etiqueta de hipervínculo utilizada en el body. Se pondrá en el atributo href la URL de destino obligatoria para que sea un link. Luego en hreflang el idioma de destino, en charset la codificación, y rel la relación con el destino (que propósito tiene)
+
+
+2-f
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+Se usa en la sección body, crea una tabla estructurada con títulos y filas, se usa caption para el título de la tabla, tr para filas, th para celdas de encabezado, scope para accesibilidad, y td para celdas de datos regulares.
+
+Ejercitación 3:
