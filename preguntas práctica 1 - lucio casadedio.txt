@@ -1,1 +1,30 @@
+Lucio Casadedio - Práctica 1 - Entornos gráficos
 1. ¿Qué es HTML, cuándo fue creado, cuáles fueron las distintas versiones y cuál es la última?
+HTML es el lenguaje estándar utilizado para publicar en la Web. 
+Fue creado a principios de los años 90. 
+Pasó por varias versiones como HTML 2.0, HTML 3.2 y la familia HTML 4 (4.0 y 4.01). 
+La última versión y el estándar actual es HTML5.
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos con HTML?
+La especificación del W3C marca tres principios fundamentales:
+
+Separar estructura y presentación: Usar HTML solo para la estructura y dejar el diseño visual a las hojas de estilo (CSS).
+
+Considerar la accesibilidad universal: Asegurar que la web pueda ser leída por todos, incluyendo agentes de usuario no visuales.
+
+Ayudar con la representación incremental: Escribir el código de forma que los navegadores puedan ir mostrando la página mientras se descarga, sin tener que esperar a que termine.
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿Y obsoleto?
+Un elemento está desaprobado cuando ya no se recomienda su uso, ya sea porque fue reemplazado por un tag más moderno (ej. <object> en vez de <applet>) o porque su función visual debe hacerse con hojas de estilo.
+Por otro lado, se considera obsoleto cuando el elemento fue eliminado definitivamente de la especificación y no hay garantías de que el navegador lo pueda interpretar.
+
+4. ¿Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+El DTD es el conjunto de reglas que le indica al navegador qué etiquetas y estructuras están permitidas en el documento. HTML 4.01 contempla tres DTDs:
+
+DTD Estricto: Es el más limpio, no permite elementos ni atributos desaprobados (obliga a usar hojas de estilo).
+
+DTD Transicional: Permite el uso de elementos y atributos desaprobados, pensado para sitios más antiguos.
+
+DTD con Marcos (Frameset): Es igual al Transicional, pero le suma la posibilidad de dividir la pantalla usando el elemento <frameset>.
+
+5.
