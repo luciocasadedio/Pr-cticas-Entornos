@@ -1,4 +1,5 @@
 Lucio Casadedio - Práctica 1 - Entornos gráficos
+
 Ejercitación 1:
 1. ¿Qué es HTML, cuándo fue creado, cuáles fueron las distintas versiones y cuál es la última?
 HTML es el lenguaje estándar utilizado para publicar en la Web. 
@@ -72,6 +73,21 @@ Etiqueta de hipervínculo utilizada en el body. Se pondrá en el atributo href l
 <td>&nbsp;</td>
 </tr>
 </table>
-Se usa en la sección body, crea una tabla estructurada con títulos y filas, se usa caption para el título de la tabla, tr para filas, th para celdas de encabezado, scope para accesibilidad, y td para celdas de datos regulares.
+Se usa en la sección body, crea una tabla estructurada con títulos y filas, se usa caption para el título de la tabla, tr para filas, th para celdas de encabezado/títulos, scope para accesibilidad ya que define si una celda corresponde a una fila, columna o grupo de ellas, y td para celdas de datos regulares.
 
 Ejercitación 3:
+En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
+3-a
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a> ---> es un enlace a google que se cargará en la misma ventana/pestaña en la que se encuentra actualmente.
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a> --> es un enlace a google que se cargará en una ventana/pestaña nueva dejando abierta la principal.
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help"> --> incluye atributos que le dan información al navegador sobre el tipo de enlace como el tipo de documento, el idioma, codificación de carácteres, etc.
+<a href="#">Click aquí para ir a Google</a> --> Es un enlace que no llevará a otra página web sino que saltará a una sección específica dentro de la página en este caso no se específica cual utilizando un ancla #.
+<a href="#arriba">Click aquí para volver arriba</a> --> Es un enlace que tampoco llevará a otra página web sino que saltará a la sección "arriba".
+<a name="arriba" id="arriba"></a> --> No crea un enlace que se pueda clickear ya que no presenta el atributo href con en el enlace.
+
+3-b
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p> --> 
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
+gen1" />Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
