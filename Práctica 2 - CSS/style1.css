@@ -1,0 +1,17 @@
+p#normal { 
+font-family: arial,helvetica; 
+font-size: 11px; 
+font-weight: bold; 
+} 
+*#destacado { 
+border-style: solid; 
+border-color: blue; 
+border-width: 2px; 
+} 
+#distinto { 
+background-color: #9EC7EB; 
+color: red; 
+} 
+/* en la primera declaración se le aplica a los párrafos con id "normal" un estilo de letra arial o helvetica, tamaño 11px y negrita. 
+En la segunda declaración se le aplica a los elementos con id "destacado" un borde sólido azul de 2px. 
+En la tercera declaración se le aplica a los elementos con id "distinto" un fondo de color #9EC7EB y un color de texto rojo.*/

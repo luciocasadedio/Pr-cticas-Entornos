@@ -1,0 +1,13 @@
+p.quitar { 
+color: red; 
+} 
+*.desarrollo { 
+font-size: 8px; 
+} 
+.importante { 
+font-size: 20px; 
+}
+/*En la primera declaración a los párrafos con class "quitar" se les aplica color rojo. 
+En la segunda declaración a cualquier elemento (*) que tenga la clase desarrollo se le aplicará un tamaño de fuente de 8px.
+En la tercera declaración a cualquier elemento con la clase importante se le aplicará tamaño de fuente 20px, en la práctica es lo mismo
+ponerlo con * o sin, CSS impondrá el estilo igualmente.

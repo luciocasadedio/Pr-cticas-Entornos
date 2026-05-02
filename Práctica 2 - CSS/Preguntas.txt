@@ -31,3 +31,7 @@ Cuando existen varias reglas de CSS diferentes que intentan aplicar estilos dist
 Este proceso tiene en cuenta 3 factores, 1. la importancia y origen (reglas marcadas con !important tienen más prioridad) 2. Un selector más específico vence a uno menos específico. Por ejemplo,
 un estilo aplicado a un #id gana sobre un estilo aplicado a una .clase y la clase gana sobre la etiqueta. (De más específico a más general) 3. Orden de aparición, si dos reglas tienen la misma
 especificidad prevalecerá la última regla que el navegador lea (la que este más abajo o en el último archivo css cargado)
+
+--------------------------------
+Ejercicio 2: hecho en style1.css y en index1.html
+Ejercicio 3: hecho en style2.css y en index 2.html
