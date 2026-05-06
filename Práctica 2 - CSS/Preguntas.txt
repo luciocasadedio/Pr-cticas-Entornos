@@ -82,3 +82,6 @@ que lee el navegador.
 -------------------------------------
 Ejercicio 5:
 hecho en style3.css
+-------------------------------------
+Ejercicio 6:
+hecho en principal.html y en estilo2.css
