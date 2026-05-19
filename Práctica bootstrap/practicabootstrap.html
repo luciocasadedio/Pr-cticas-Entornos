@@ -1,5 +1,183 @@
-<html>
-    <h1>asasas</h1>
-    <h2>aapapapa</h2>
-    <p>hola</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="container contenedor">
+
+    <!-- Práctica 2 - Ejercicio 1 -->
+    <div class="row">
+        <div class="col-12">
+            <div class="header"></div>
+        </div>
+    </div>
+
+    <!-- Práctica 2 - Ejercicio 1 -->
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div style="background-color: #f5d9c8; min-height: 60px;"></div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div style="background-color: #c9a0a8; min-height: 60px;"></div>
+        </div>
+    </div>
+
+    <!-- Práctica 2 - Ejercicio 2: Estructura principal -->
+    <div class="row mt-3">
+
+        <!-- Sidebar (col-3) -->
+        <div class="col-sm-12 col-md-3">
+            <div class="sidebar p-3">
+                <!-- Práctica 3 - Ejercicio 2: Botón que abre modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">
+                    Abrir Modal
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="col-sm-12 col-md-9">
+
+            <!-- Navbar verde -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="navbar-section p-2">
+                        <!-- Práctica 3 - Ejercicio 1: Alerta alert-success -->
+                        <div class="alert alert-success">
+                            Alerta
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <!-- Práctica 3 - Ejercicio 3: Cards para los rectángulos violetas -->
+            <div class="row mt-2">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/045/132/933/small/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg" class="card-img-top" alt="imagen">
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <p class="card-text">Texto descriptivo</p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/045/132/933/small/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg" class="card-img-top" alt="imagen">
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <p class="card-text">Texto descriptivo</p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/045/132/933/small/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg" class="card-img-top" alt="imagen">
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <p class="card-text">Texto descriptivo</p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/045/132/933/small/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg" class="card-img-top" alt="imagen">
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <p class="card-text">Texto descriptivo</p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/045/132/933/small/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg" class="card-img-top" alt="imagen">
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <p class="card-text">Texto descriptivo</p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="imagen">
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <p class="card-text">Texto descriptivo</p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila inferior: -->
+            <div class="row mt-2">
+                <div class="col-sm-6 col-md-3">
+                    <div class="blue-small"></div>
+                </div>
+
+                <!-- Práctica 3 - Ejercicio 4 -->
+                <div class="col-sm-6 col-md-6">
+                    <div id="Carousel" class="carousel slide blue-large" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/045/132/933/small/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg" class="d-block w-100" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src= "https://cdn.pixabay.com/photo/2023/03/16/08/42/camping-7856198_640.jpg" class="d-block w-100" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIvI1_Q8PI7Tsak9HIx2cK2ayLAcpwRqS7yQ&s" class="d-block w-100" alt="Imagen 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="miModalLabel">Modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                Contenido del modal
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
