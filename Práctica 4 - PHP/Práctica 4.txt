@@ -1,4 +1,4 @@
-Práctica 4 - PHP
+Práctica 4 - PHP - Lucio Casadedio - 56447
 Ejercicio 1:  En el siguiente código identificar: 
 • las variables y su tipo 
 • los operadores 
@@ -38,6 +38,21 @@ Ejercicio 1:  En el siguiente código identificar:
     las estructuras de control usadas son dos if que preguntan si es una variable int y otro que pregunta si la variable es de tipo string.
     /// Salida:
     La salida por pantalla es: 1,xyz,xyz,18,44,54
-
+----------------------------------------------------------
 Ejercicio 2: Indicar si los siguientes códigos son equivalentes
-a) 
+a) Sí, son equivalentes. Devuelven el mismo valor. La única diferencia es que en el tercer código la variable incremental queda en 10 no en 11.
+b) Sí, son equivalentes. Los 4 devuelven el mismo valor y funcionan igual.
+c) Sí, son equivalentes. La sentencia del switch es una sentencia de decisión múltiple y tiene la misma función que un elseif.
+------------------------------------------------------------
+Ejercicio 3:
+a) El siguiente código usa HTML y php para realizar una tabla con 5 filas y 2 columnas usando el <tr> que genera líneas.
+b) El siguiente código es un formulario que primero valida si ya no tiene cargado en método POST alguna variable con isset y en el caso de que no 
+le pide al usuario ingresar edad y con esa edad usando php comprueba si es mayor de 21 o si es menor.
+-------------------------------------------------------------
+Ejercicio 4:
+La salida que produce el siguiente código es:
+"El NULL NULL"
+"El clavel blanco"
+-------------------------------------------------------------
+Ejercicio 5:
+Hecho en archivos contador.php, visitas.php, contador.dat.
