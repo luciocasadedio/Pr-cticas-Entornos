@@ -8,8 +8,8 @@ if (isset($_POST['enviar'])){
     $destinatario = $_POST['destinatario'];
     $asunto = $_POST['asunto'];
     $mensaje = $_POST['mensaje'];
-
-    if (mail($destinatario, $asunto, $mensaje, $headers)) {
+    $headers_completos = $headers . "From: " . $remitente . "\r\n";
+    if (mail($destinatario, $asunto, $mensaje, $headers_completos)) {
         echo "Correo enviado correctamente.";
     } else {
         echo "Error al enviar el correo.";
