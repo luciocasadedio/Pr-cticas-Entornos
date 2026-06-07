@@ -1,0 +1,38 @@
+<!--- ALTA---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de capital</title>
+</head>
+<body>
+    <h1>Alta de capital</h1>
+    <form action="alta.php" method="POST">
+<table width = "225">
+    <tr>
+        <td>Ciudad</td>
+        <td><input type="text" name="ciudad" required size="20" maxlength="40"></td>
+    </tr>
+    <tr>
+        <td>País:</td>
+        <td><input type="text" name="pais" required size="20" maxlength="40"></td>
+    </tr>
+    <tr>
+        <td>Habitantes:</td>
+        <td><input type="number" name="habitantes" required size="20" maxlength="40"></td>
+    </tr>
+    <tr>
+        <td>Superficie:</td>
+        <td><input type="number" name="superficie" required size="20" maxlength="40"></td>
+    </tr>
+    <tr>
+        <td>Tiene metro?:</td>
+        <td><input type="checkbox" name="metro"></td>
+    </tr>
+    <td colspan="3" align="center"><input type="submit" value="Enviar"></td>
+</table>
+<p><a href="index.php">Volver</a></p>
+</body>
+

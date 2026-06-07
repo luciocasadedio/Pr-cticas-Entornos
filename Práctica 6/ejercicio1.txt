@@ -1,0 +1,11 @@
+Ejercicio 1 - Lucio Casadedio - 56447
+a. con la función mysqli_connect($hostname,$nombreusuario,$contraseña);, asiganndola a una variable con el nombre de la conexión. Ej: $link = mysqli_connect()
+b. el hostname, el nombre de usuario, y la contraseña
+c. mysqli_select_db($nombreconexion,$nombrebDB); el $nombreconexion ya se define antes como $link por ejemplo.
+d. el nombre de la conexion y el nombre de la base de datos.
+e. realizar una consulta en la base de datos conectada previamente. 
+f. requiere el nombre de la conexion ($link) y la consulta $query por ejemplo y se lo asigna a una variable $result por ejemplo.
+g. capturar el error y mostrarlo en pantalla
+h. obtener la descripción del último error que se haya producido.
+i. El siguiente código luego del éxito en la función mysqli_query(); y mediante un while para validar que existan las filas muestra las primeras 3 filas de la base de datos conusltada con la función 
+luego se libera la memoria ocupada con mysqli_free_result(); y se cierra la conexión con mysqli_close
