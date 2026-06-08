@@ -1,4 +1,0 @@
-//Modificación
-<?php
-
-?>
