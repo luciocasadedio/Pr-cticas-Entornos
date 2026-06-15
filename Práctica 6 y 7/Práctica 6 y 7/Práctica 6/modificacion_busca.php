@@ -1,4 +1,4 @@
-//Modificación de todo buscando si no existe previamente 
+//Modificación de todo buscando si no existe previamente y cargando datos a modificar
 <?php
 $link = mysqli_connect("hostname","root","") or die ("Error al conectar". mysqli_connect_error());
 $select = mysqli_select_db($link,"capitales") or die ("error al seleccionar DB".mysqli_error($link));

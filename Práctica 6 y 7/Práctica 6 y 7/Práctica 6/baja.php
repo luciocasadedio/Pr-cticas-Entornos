@@ -12,7 +12,7 @@ if (mysqli_num_rows($result)==0){
     echo ("Ciudad inexistente");
     echo ("<a href='index.html'>Continuar</a>");
 }else {
-    //Borrar ciudad
+//Borrar ciudad
 $query = "DELETE FROM ciudades where ciudad = '$ciudad'";
 $result = mysqli_query($link,$query);
 echo "La ciudad fue borrada";
@@ -22,5 +22,7 @@ mysqli_free_result($result);
 mysqli_close($link);
 ?>
 
+  
+                
 
 

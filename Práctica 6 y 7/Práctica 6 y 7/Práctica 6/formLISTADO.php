@@ -14,7 +14,7 @@
     $total_registros = mysqli_num_rows($result);
     ?>
     <table border ="1" width="50%">
-    <tr>
+    <tr>      
         <td><b>Ciudad</b></td>
         <td><b>País</b></td>
         <td><b>Habitantes</b></td>
